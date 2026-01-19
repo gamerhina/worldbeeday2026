@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Redirect calls to root to dist/index.html
+    RewriteRule ^$ dist/index.html [L]
+    
+    # Redirect all other calls to dist/ folder
+    RewriteCond %{REQUEST_URI} !^/dist/
+    RewriteRule ^(.*)$ dist/$1 [L]
+</IfModule>
