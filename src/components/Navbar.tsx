@@ -19,6 +19,7 @@ const Navbar = () => {
     { name: 'About', href: '#about' },
     { name: 'Speakers', href: '#speakers' },
     { name: 'Timeline', href: '#timeline' },
+    { name: 'Registration', href: '#pricing' },
   ];
 
   return (
@@ -49,6 +50,7 @@ const Navbar = () => {
           {/* Desktop Right Menu */}
           <div className="hidden md:flex items-center space-x-2">
              <a href="#timeline" className="text-base font-medium text-bee-dark/70 px-4 py-2 rounded-full hover:bg-bee-gold/20 hover:text-bee-dark transition-all duration-300">Timeline</a>
+             <a href="#pricing" className="text-base font-medium text-bee-dark/70 px-4 py-2 rounded-full hover:bg-bee-gold/20 hover:text-bee-dark transition-all duration-300">Registration</a>
              <a href="#contact" className="ml-2 px-6 py-2.5 bg-bee-dark text-white rounded-full font-bold text-base hover:bg-bee-gold hover:text-bee-dark transition-all shadow-md hover:shadow-lg">
                 Contact
              </a>
@@ -90,7 +92,7 @@ const Navbar = () => {
                   {link.name}
                 </a>
               ))}
-               <a href="#register" onClick={() => setIsOpen(false)} className="text-xl font-bold text-bee-gold mt-4">
+               <a href="#pricing" onClick={() => setIsOpen(false)} className="text-xl font-bold text-bee-gold mt-4">
                 Register Now
               </a>
             </div>
