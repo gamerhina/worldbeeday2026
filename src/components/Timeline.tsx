@@ -3,11 +3,12 @@ import { motion } from 'framer-motion';
 
 const Timeline = () => {
   const events = [
-    { date: "April 1, 2026", title: "Abstract Submission Opens", active: false },
-    { date: "April 20, 2026", title: "Early Bird Registration Deadline", active: false },
-    { date: "May 1, 2026", title: "Full Paper Submission", active: true },
-    { date: "May 15, 2026", title: "Registration Closes", active: false },
-    { date: "May 20, 2026", title: "World Bee Day Seminar", active: false },
+    { date: "April 1 – May 15, 2026", title: "Abstract Submission", active: false },
+    { date: "April 1 – April 20, 2026", title: "Early Bird Registration", active: true },
+    { date: "May 20, 2026", title: "⁠LoA (Letter of Acceptance) Notification", active: false },
+    { date: "May 12 – June 2, 2026", title: "⁠Full Paper Submission", active: true },
+    { date: "June 18 – 19, 2026", title: "Seminar Dates", active: false },
+    { date: "June 20, 2026", title: "Fieldtrip", active: true },
   ];
 
   return (
