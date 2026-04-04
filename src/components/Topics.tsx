@@ -1,14 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Bug, Palmtree, Sprout, TrendingUp, Droplets, Globe } from 'lucide-react';
+import { Bug, Sprout, Users, Cpu, Leaf } from 'lucide-react';
 
 const topics = [
-  { icon: Bug, title: "Bee Conservation", desc: "Protecting native pollinators in agricultural landscapes.", color: "text-amber-600", bg: "bg-amber-50", border: "border-amber-500" },
-  { icon: Palmtree, title: "Sustainable Palm Oil", desc: "Best practices for eco-friendly plantation management.", color: "text-emerald-600", bg: "bg-emerald-50", border: "border-emerald-500" },
-  { icon: Sprout, title: "Biodiversity", desc: "Enhancing flora diversity to support ecosystem health.", color: "text-lime-600", bg: "bg-lime-50", border: "border-lime-500" },
-  { icon: TrendingUp, title: "Productivity", desc: "Boosting yield through natural pollination services.", color: "text-blue-600", bg: "bg-blue-50", border: "border-blue-500" },
-  { icon: Droplets, title: "Resource Management", desc: "Efficient water and soil usage in farming.", color: "text-cyan-600", bg: "bg-cyan-50", border: "border-cyan-500" },
-  { icon: Globe, title: "Global Standards", desc: "Aligning with international sustainability goals.", color: "text-indigo-600", bg: "bg-indigo-50", border: "border-indigo-500" },
+  { icon: Sprout, title: "Crop Cultivation", desc: "Modern agronomic practices to sustainably improve productivity and crop yield quality.", color: "text-emerald-600", bg: "bg-emerald-50", border: "border-emerald-500" },
+  { icon: Users, title: "Socio-Economics", desc: "Analyzing farmers' welfare, market dynamics, and economic policies in the agricultural sector.", color: "text-blue-600", bg: "bg-blue-50", border: "border-blue-500" },
+  { icon: Cpu, title: "Agricultural Information Technology", desc: "Application of smart technologies, digitalization, and precision for the future of farming.", color: "text-indigo-600", bg: "bg-indigo-50", border: "border-indigo-500" },
+  { icon: Bug, title: "Plant Pests & Diseases", desc: "Integrated pest and disease management strategies to protect agricultural yields.", color: "text-rose-600", bg: "bg-rose-50", border: "border-rose-500" },
+  { icon: Leaf, title: "Conservation, Biodiversity & Ecosystems", desc: "Maintaining ecological balance and biodiversity to support environmental sustainability.", color: "text-amber-600", bg: "bg-amber-50", border: "border-amber-500" },
 ];
 
 const Topics = () => {
@@ -20,12 +19,12 @@ const Topics = () => {
           <h2 className="text-3xl md:text-5xl font-bold text-bee-dark mt-2">Seminar Topics</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {topics.map((item, index) => (
             <motion.div
               key={index}
               whileHover={{ y: -5, scale: 1.01 }}
-              className={`modern-card p-10 flex flex-col items-start border-t-4 ${item.border}`}
+              className={`modern-card p-10 flex flex-col items-start border-t-4 w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.35rem)] ${item.border}`}
             >
               <div className={`w-16 h-16 ${item.bg} rounded-2xl flex items-center justify-center mb-8 ${item.color}`}>
                 <item.icon size={32} strokeWidth={1.5} />

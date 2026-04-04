@@ -3,8 +3,8 @@ import { BadgeCheck, Wallet } from 'lucide-react';
 
 const Pricing = () => {
   const fees = [
-    { category: 'Pemakalah Anggota PEI', price: '550.000', tag: 'Member', color: 'from-amber-400 to-orange-500', tagColor: 'text-amber-600 bg-amber-50' },
-    { category: 'Pemakalah Bukan Anggota PEI', price: '600.000', tag: 'General', color: 'from-bee-teal to-teal-600', tagColor: 'text-teal-600 bg-teal-50' },
+    { category: 'Pemakalah Anggota API atau PEI', price: '550.000', tag: 'Member', color: 'from-amber-400 to-orange-500', tagColor: 'text-amber-600 bg-amber-50' },
+    { category: 'Pemakalah Bukan Anggota API atau PEI', price: '600.000', tag: 'General', color: 'from-bee-teal to-teal-600', tagColor: 'text-teal-600 bg-teal-50' },
     { category: 'Pemakalah Mahasiswa S1', price: '300.000', tag: 'Student', color: 'from-blue-400 to-indigo-500', tagColor: 'text-blue-600 bg-blue-50' },
     { category: 'Pemakalah Poster', price: '500.000', tag: 'Poster', color: 'from-purple-400 to-violet-500', tagColor: 'text-purple-600 bg-purple-50' },
     { category: 'Peserta Bukan Pemakalah', price: '350.000', tag: 'Attendee', color: 'from-gray-500 to-slate-700', tagColor: 'text-slate-600 bg-slate-50' },
