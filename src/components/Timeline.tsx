@@ -8,7 +8,7 @@ const Timeline = () => {
     { date: "May 20, 2026", title: "⁠LoA (Letter of Acceptance) Notification", active: false },
     { date: "May 12 – June 2, 2026", title: "⁠Full Paper Submission", active: true },
     { date: "June 18 – 19, 2026", title: "Seminar Dates", active: false },
-    { date: "June 20, 2026", title: "Fieldtrip", active: true },
+    { date: "June 20, 2026", title: "Fieldtrip", active: true, link: "#fieldtrip-page" },
   ];
 
   return (
@@ -44,6 +44,15 @@ const Timeline = () => {
                   <div className={`absolute top-0 bottom-0 w-1.5 bg-bee-gold ${index % 2 === 0 ? 'right-0' : 'left-0'}`} />
                   <span className="font-sans text-bee-teal font-bold text-sm tracking-widest uppercase block mb-2">{event.date}</span>
                   <h3 className="font-serif text-xl font-bold text-bee-dark group-hover:text-bee-gold transition-colors">{event.title}</h3>
+                  
+                  {event.link && (
+                    <div className={`mt-5 flex ${index % 2 === 0 ? 'justify-end' : 'justify-start'}`}>
+                      <a href={event.link} className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-bee-gold to-yellow-500 text-bee-dark rounded-full font-sans text-sm font-bold shadow-md shadow-bee-gold/30 hover:shadow-lg hover:shadow-bee-gold/50 hover:scale-105 hover:-translate-y-0.5 transition-all duration-300 group/link border border-white/50">
+                        Lihat Detail Fieldtrip
+                        <svg className="w-4 h-4 transform group-hover/link:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                      </a>
+                    </div>
+                  )}
                 </div>
               </div>
             </motion.div>
