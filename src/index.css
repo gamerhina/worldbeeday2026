@@ -36,7 +36,7 @@
 }
 
 .modern-card {
-  @apply bg-white rounded-4xl shadow-sm hover:shadow-md transition-all duration-300;
+  @apply bg-white rounded-4xl shadow-sm hover:shadow-md transition-shadow duration-300;
 }
 
 .glass-panel {

@@ -52,7 +52,7 @@ const Speakers = () => {
               <img 
                 src={speaker.image} 
                 alt={speaker.name} 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale-[20%] group-hover:grayscale-0"
+                className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105 filter grayscale-[20%] group-hover:grayscale-0"
               />
               
               <div className="absolute inset-0 bg-gradient-to-t from-bee-dark/90 via-bee-dark/20 to-transparent p-8 flex flex-col justify-end">
