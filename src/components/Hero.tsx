@@ -150,7 +150,7 @@ const Hero = () => {
             </p>
 
             <div className={`flex gap-4 ${isCenter ? 'justify-center' : isRight ? 'justify-end' : 'justify-start'}`}>
-              <a href="#register" className="px-8 py-4 bg-bee-dark text-white rounded-full font-bold text-base hover:scale-105 transition-transform duration-300 shadow-lg">
+              <a href="https://forms.gle/nfJi6cR4LJ28NJGG7" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-bee-dark text-white rounded-full font-bold text-base hover:scale-105 transition-transform duration-300 shadow-lg">
                  Register Now
               </a>
               <a href="#about" className="px-8 py-4 bg-white/50 backdrop-blur border border-bee-dark/10 rounded-full font-bold text-base hover:bg-white transition-colors duration-300">

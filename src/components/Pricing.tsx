@@ -57,9 +57,9 @@ const Pricing = () => {
               <Wallet size={18} className="mr-2 text-bee-gold" />
               Includes kit, certificate, and lunch.
             </div>
-            <button className="px-10 py-3 rounded-xl bg-bee-gold text-bee-dark font-black hover:bg-white transition-all shadow-lg hover:-translate-y-0.5 whitespace-nowrap">
+            <a href="https://forms.gle/nfJi6cR4LJ28NJGG7" target="_blank" rel="noopener noreferrer" className="px-10 py-3 rounded-xl bg-bee-gold text-bee-dark font-black hover:bg-white transition-all shadow-lg hover:-translate-y-0.5 whitespace-nowrap inline-block">
               REGISTER NOW
-            </button>
+            </a>
           </div>
         </div>
       </div>

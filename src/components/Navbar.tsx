@@ -92,7 +92,7 @@ const Navbar = () => {
                   {link.name}
                 </a>
               ))}
-               <a href="#pricing" onClick={() => setIsOpen(false)} className="text-xl font-bold text-bee-gold mt-4">
+               <a href="https://forms.gle/nfJi6cR4LJ28NJGG7" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className="text-xl font-bold text-bee-gold mt-4">
                 Register Now
               </a>
             </div>
