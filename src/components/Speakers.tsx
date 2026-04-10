@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const speakers = [
   {
-    name: "Prof. Dwi Asmono",
+    name: "Dwi Asmono, Ph.D.",
     role: "Keynote Speaker",
     image: "/assets/speaker_dwi_asmono.png",
     topic: "Polinator dan produktivitas kelapa sawit"

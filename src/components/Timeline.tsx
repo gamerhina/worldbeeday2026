@@ -3,12 +3,13 @@ import { motion } from 'framer-motion';
 
 const Timeline = () => {
   const events = [
-    { date: "April 1 – May 15, 2026", title: "Abstract Submission", active: false },
-    { date: "April 1 – April 20, 2026", title: "Early Bird Registration", active: true },
-    { date: "May 20, 2026", title: "⁠LoA (Letter of Acceptance) Notification", active: false },
-    { date: "May 12 – June 2, 2026", title: "⁠Full Paper Submission", active: true },
-    { date: "June 18 – 19, 2026", title: "Seminar Dates", active: false },
-    { date: "June 20, 2026", title: "Fieldtrip", active: true, link: "#fieldtrip-page" },
+    { date: "April 10 – April 25, 2026", title: "Early Bird Abstract Submission", active: true },
+    { date: "April 15 – April 25, 2026", title: "Early Bird LoA Notification", active: true },
+    { date: "April 26 – May 25, 2026", title: "Late Bird Abstract Submission", active: false },
+    { date: "April 26 – May 25, 2026", title: "Late Bird LoA Notification", active: false },
+    { date: "April 15 – June 2, 2026", title: "Full Paper Submission", active: false },
+    { date: "June 18 – 20, 2026", title: "Seminar Dates", active: false },
+    { date: "June 21, 2026", title: "Fieldtrip", active: false, link: "#fieldtrip-page" },
   ];
 
   return (
@@ -48,7 +49,7 @@ const Timeline = () => {
                   {event.link && (
                     <div className={`mt-5 flex ${index % 2 === 0 ? 'justify-end' : 'justify-start'}`}>
                       <a href={event.link} className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-bee-gold to-yellow-500 text-bee-dark rounded-full font-sans text-sm font-bold shadow-md shadow-bee-gold/30 hover:shadow-lg hover:shadow-bee-gold/50 hover:scale-105 hover:-translate-y-0.5 transition-all duration-300 group/link border border-white/50">
-                        Lihat Detail Fieldtrip
+                        View Fieldtrip Details
                         <svg className="w-4 h-4 transform group-hover/link:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                       </a>
                     </div>

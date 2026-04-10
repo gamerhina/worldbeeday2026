@@ -3,11 +3,12 @@ import { BadgeCheck, Wallet } from 'lucide-react';
 
 const Pricing = () => {
   const fees = [
-    { category: 'Pemakalah Anggota API atau PEI', price: '550.000', tag: 'Member', color: 'from-amber-400 to-orange-500', tagColor: 'text-amber-600 bg-amber-50' },
-    { category: 'Pemakalah Bukan Anggota API atau PEI', price: '600.000', tag: 'General', color: 'from-bee-teal to-teal-600', tagColor: 'text-teal-600 bg-teal-50' },
-    { category: 'Pemakalah Mahasiswa S1', price: '300.000', tag: 'Student', color: 'from-blue-400 to-indigo-500', tagColor: 'text-blue-600 bg-blue-50' },
-    { category: 'Pemakalah Poster', price: '500.000', tag: 'Poster', color: 'from-purple-400 to-violet-500', tagColor: 'text-purple-600 bg-purple-50' },
-    { category: 'Peserta Bukan Pemakalah', price: '350.000', tag: 'Attendee', color: 'from-gray-500 to-slate-700', tagColor: 'text-slate-600 bg-slate-50' },
+    { category: 'Presenter (PEI/API Member)', earlyBird: '550.000', lateBird: '600.000', tag: 'Member', color: 'from-amber-400 to-orange-500', tagColor: 'text-amber-600 bg-amber-50' },
+    { category: 'Presenter (Non-Member)', earlyBird: '600.000', lateBird: '650.000', tag: 'General', color: 'from-bee-teal to-teal-600', tagColor: 'text-teal-600 bg-teal-50' },
+    { category: 'Student Presenter', earlyBird: '300.000', lateBird: '350.000', tag: 'Student', color: 'from-blue-400 to-indigo-500', tagColor: 'text-blue-600 bg-blue-50' },
+    { category: 'Poster Presenter', earlyBird: '500.000', lateBird: '500.000', tag: 'Poster', color: 'from-purple-400 to-violet-500', tagColor: 'text-purple-600 bg-purple-50' },
+    { category: 'Non-Presenter Participant', earlyBird: '350.000', lateBird: '350.000', tag: 'Participant', color: 'from-gray-500 to-slate-700', tagColor: 'text-slate-600 bg-slate-50' },
+    { category: 'Field Trip', earlyBird: '-', lateBird: '-', tag: 'Tour', color: 'from-green-400 to-emerald-500', tagColor: 'text-green-600 bg-green-50' },
   ];
 
   return (
@@ -23,8 +24,9 @@ const Pricing = () => {
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-gradient-to-r from-bee-dark to-slate-800 text-white">
-                  <th className="px-6 py-5 font-bold uppercase tracking-wider text-xs">Category Description</th>
-                  <th className="px-6 py-5 font-bold uppercase tracking-wider text-xs text-right">Fee (IDR)</th>
+                  <th className="px-6 py-5 font-bold uppercase tracking-wider text-xs whitespace-nowrap">Category</th>
+                  <th className="px-6 py-5 font-bold uppercase tracking-wider text-xs text-right whitespace-nowrap">Early Bird (IDR)<br/><span className="text-[10px] font-normal opacity-70">April 10 - April 25, 2026</span></th>
+                  <th className="px-6 py-5 font-bold uppercase tracking-wider text-xs text-right whitespace-nowrap">Late Bird (IDR)<br/><span className="text-[10px] font-normal opacity-70">April 26 - May 25, 2026</span></th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100">
@@ -36,14 +38,19 @@ const Pricing = () => {
                           <BadgeCheck size={20} />
                         </div>
                         <div>
-                          <div className="font-bold text-bee-dark text-lg group-hover:text-bee-teal transition-colors">{item.category}</div>
+                          <div className="font-bold text-bee-dark text-lg group-hover:text-bee-teal transition-colors leading-tight mb-1">{item.category}</div>
                           <span className={`text-[10px] font-black px-2 py-0.5 rounded uppercase tracking-tighter ${item.tagColor}`}>{item.tag}</span>
                         </div>
                       </div>
                     </td>
-                    <td className="px-6 py-5 text-right">
+                    <td className="px-6 py-5 text-right whitespace-nowrap">
                       <div className="font-sans font-black text-2xl text-bee-dark group-hover:text-bee-gold transition-colors tracking-tight">
-                        {item.price}
+                        {item.earlyBird}
+                      </div>
+                    </td>
+                    <td className="px-6 py-5 text-right bg-slate-50/50 group-hover:bg-transparent transition-colors whitespace-nowrap">
+                      <div className="font-sans font-black text-2xl text-bee-dark group-hover:text-bee-gold transition-colors tracking-tight">
+                        {item.lateBird}
                       </div>
                     </td>
                   </tr>
