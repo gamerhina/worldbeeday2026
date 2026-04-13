@@ -8,8 +8,8 @@ const Timeline = () => {
     { date: "26 April – 25 Mei 2026", title: "Pengiriman Abstrak (Late Bird)", active: false },
     { date: "26 April – 25 Mei 2026", title: "Pemberitahuan LoA (Late Bird)", active: false },
     { date: "15 April – 2 Juni 2026", title: "Pengiriman Makalah Lengkap", active: false },
-    { date: "18 – 20 Juni 2026", title: "Pelaksanaan Seminar", active: false },
-    { date: "21 Juni 2026", title: "Field Trip", active: false, link: "#fieldtrip-page" },
+    { date: "18 – 19 Juni 2026", title: "Pelaksanaan Seminar", active: false },
+    { date: "20 Juni 2026", title: "Field Trip", active: false, link: "#fieldtrip-page" },
   ];
 
   return (
