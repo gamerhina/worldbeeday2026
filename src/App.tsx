@@ -8,6 +8,7 @@ import Timeline from './components/Timeline';
 import Pricing from './components/Pricing';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Sponsor from './components/Sponsor';
 
 function App() {
   const [lenis, setLenis] = useState<Lenis | null>(null);
@@ -69,13 +70,14 @@ function App() {
       <div id="home">
         <Hero />
       </div>
-      <div id="about" className="py-24 bg-bee-cream text-center px-4 relative">
+      <Sponsor />
+      <div id="about" className="py-12 md:py-24 bg-bee-cream text-center px-4 relative">
         <div className="max-w-4xl mx-auto flex flex-col items-center relative z-10">
-          <img src="/assets/logo.png" alt="Seminar Logo" className="h-64 w-auto mb-10 drop-shadow-2xl filter hover:scale-105 transition-transform duration-500" />
-          <span className="font-sans text-bee-teal font-bold uppercase tracking-widest text-sm mb-2 block">Summary</span>
-          <h2 className="font-serif text-5xl font-bold text-bee-dark mb-8">About The Seminar</h2>
-          <p className="font-sans text-xl text-bee-dark/70 leading-relaxed">
-            Palm oil plays a crucial role in Indonesia's economy, yet its productivity is hindered by the declining population of pollinating weevils. Honey bees and stingless bees have the potential to serve as alternative pollinators while offering a new economic source. The "Bees for Sustainable Palm Oil" seminar fosters cross-sector collaboration to strengthen the role of bees in pollination, conservation, and the future sustainability of palm oil.
+          <img src="/assets/logo.png" alt="Seminar Logo" className="h-40 md:h-64 w-auto mb-6 md:mb-10 drop-shadow-2xl filter hover:scale-105 transition-transform duration-500" />
+          <span className="font-sans text-bee-teal font-bold uppercase tracking-widest text-xs md:text-sm mb-1 md:mb-2 block">Ringkasan</span>
+          <h2 className="font-serif text-3xl md:text-5xl font-bold text-bee-dark mb-4 md:mb-8">Tentang Seminar</h2>
+          <p className="font-sans text-sm md:text-xl text-bee-dark/70 leading-relaxed text-justify md:text-center mt-2">
+            Kelapa sawit memainkan peran penting dalam ekonomi Indonesia, namun produktivitasnya terhambat oleh menurunnya populasi kumbang penyerbuk. Seminar ini diselenggarakan oleh Universitas Lampung, Perhimpunan Entomologi Indonesia (PEI) berkolaborasi dengan Asosiasi Perlebahan Indonesia (API) dan sponsor tunggal PT. Tunas Baru Lampung, Tbk. Lebah madu dan lebah tanpa sengat berpotensi menjadi penyerbuk alternatif sekaligus menawarkan sumber ekonomi baru. Seminar "Lebah untuk Sawit Berkelanjutan" mendorong kolaborasi lintas sektor untuk memperkuat peran lebah dalam penyerbukan, konservasi, dan keberlanjutan kelapa sawit di masa depan.
           </p>
         </div>
         

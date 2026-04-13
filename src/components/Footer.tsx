@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
           <div className="mb-8 md:mb-0">
             <h3 className="font-serif text-3xl font-bold mb-3">World Bee Day 2026.</h3>
-            <p className="font-sans text-white/40 text-sm max-w-sm">Empowering Sustainable Agriculture through Conservation and Technological Innovation.</p>
+            <p className="font-sans text-white/40 text-sm max-w-sm">Memberdayakan Pertanian Berkelanjutan melalui Konservasi dan Inovasi Teknologi.</p>
           </div>
           
           <div className="flex space-x-6">
@@ -21,10 +21,10 @@ const Footer = () => {
         </div>
         
         <div className="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-          <p className="font-sans text-sm text-white/20">&copy; 2026 World Bee Day Committee. All rights reserved.</p>
+          <p className="font-sans text-sm text-white/20">&copy; 2026 Panitia World Bee Day. Hak cipta dilindungi.</p>
           <div className="flex space-x-6 mt-4 md:mt-0 font-sans text-sm text-white/40">
-             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+             <a href="#" className="hover:text-white transition-colors">Kebijakan Privasi</a>
+             <a href="#" className="hover:text-white transition-colors">Syarat Ketentuan</a>
           </div>
         </div>
       </div>

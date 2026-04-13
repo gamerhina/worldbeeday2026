@@ -12,10 +12,10 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="font-sans text-bee-teal font-bold uppercase tracking-widest text-sm mb-2 block">Contact Us</span>
-            <h2 className="font-serif text-5xl font-bold text-bee-dark mb-6">Get in Touch</h2>
+            <span className="font-sans text-bee-teal font-bold uppercase tracking-widest text-sm mb-2 block">Hubungi Kami</span>
+            <h2 className="font-serif text-5xl font-bold text-bee-dark mb-6">Mari Berkomunikasi</h2>
             <p className="font-sans text-bee-dark/60 mb-10 text-xl leading-relaxed">
-              Have questions about the seminar? Reach out to our committee or visit our secretariat.
+              Ada pertanyaan tentang seminar? Hubungi panitia kami atau kunjungi sekretariat kami.
             </p>
 
             <div className="space-y-8">
@@ -24,8 +24,8 @@ const Contact = () => {
                   <MapPin />
                 </div>
                 <div>
-                  <h4 className="font-serif text-xl font-bold text-bee-dark">Location</h4>
-                  <p className="font-sans text-bee-dark/60">HOTEL HORISON LAMPUNG, Jl. Kartini No.88, Palapa, Kec. Tj. Karang Pusat, Kota Bandar Lampung, Lampung 35111</p>
+                  <h4 className="font-serif text-xl font-bold text-bee-dark">Lokasi</h4>
+                  <p className="font-sans text-bee-dark/60">Gedung G, Jurusan Proteksi Tanaman,Fakultas Pertanian, Universitas Lampung</p>
                 </div>
               </div>
 
@@ -45,7 +45,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-bee-dark">Contact Person</h4>
-                  <p className="text-gray-600">+62 853-7985-8585 (Puji Lestari)</p>
+                  <p className="text-gray-600">+62 853-7985-8585 (Dr. Puji Lestari)</p>
+                  <p className="text-gray-600">+62 813-7352-5491 (Dr. Ivayani)</p>
                 </div>
               </div>
             </div>

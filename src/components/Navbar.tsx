@@ -24,11 +24,29 @@ const Navbar = () => {
 
   return (
     <>
+      {/* Running Text Sponsor Banner */}
+      <div className="fixed top-0 left-0 right-0 z-[60] bg-white border-b border-red-100/50 overflow-hidden py-1.5 flex items-center shadow-sm">
+        <motion.div
+           animate={{ x: ["0%", "-50%"] }}
+           transition={{ repeat: Infinity, ease: "linear", duration: 30 }}
+           className="flex whitespace-nowrap items-center text-[10px] md:text-sm font-bold tracking-widest text-bee-dark"
+        >
+           {[...Array(8)].map((_, i) => (
+             <div key={i} className="flex items-center mx-6 md:mx-10 uppercase">
+               <span className="text-[#DA291C]">Sponsor tunggal kegiatan :</span> 
+               <span className="ml-1 md:ml-2">PT. Tunas Baru Lampung, Tbk.</span>
+               <img src="/assets/sponsor_tbl.png" alt="PT Tunas Baru Lampung" className="h-4 md:h-6 ml-3 md:ml-5 object-contain" />
+               <span className="ml-12 md:ml-20 opacity-30 text-bee-dark">•</span>
+             </div>
+           ))}
+        </motion.div>
+      </div>
+
       <motion.nav
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4"
+        className="fixed top-12 md:top-16 left-0 right-0 z-50 flex justify-center px-4"
       >
         <div className={`glass-pill px-6 py-3 rounded-pill flex items-center justify-between transition-all duration-300 ${scrolled ? 'w-[90%] md:w-[80%] shadow-md' : 'w-[95%] md:w-[90%]'}`}>
           
@@ -40,11 +58,21 @@ const Navbar = () => {
           </div>
 
           {/* Logo Center */}
-          <div className="flex-shrink-0 mx-auto md:mx-0 translate-x-0 md:-translate-x-1/2 md:absolute md:left-1/2">
+          <div className="flex-shrink-0 mx-auto md:mx-0 translate-x-0 md:-translate-x-1/2 md:absolute md:left-1/2 flex items-center justify-center gap-3 md:gap-5">
              <a href="#home" className="flex flex-col items-center justify-center group cursor-pointer">
-                <img src="/assets/logo_grup.png" alt="World Bee Day" className="h-10 w-auto group-hover:scale-105 transition-transform duration-300" />
-                <span className="font-serif font-bold text-[10px] tracking-widest uppercase text-bee-dark mt-1 whitespace-nowrap group-hover:text-bee-gold transition-colors">World Bee Day 2026</span>
+                <img src="/assets/logo_grup.png" alt="World Bee Day" className="h-8 md:h-10 w-auto group-hover:scale-105 transition-transform duration-300" />
+                <span className="font-serif font-bold text-[8px] md:text-[10px] tracking-wide md:tracking-widest uppercase text-bee-dark mt-1 whitespace-nowrap group-hover:text-bee-gold transition-colors">World Bee Day 2026</span>
              </a>
+             
+             <div className="w-px h-7 md:h-8 bg-bee-dark/20 rounded-full"></div>
+             
+             <div className="flex items-center gap-1.5 md:gap-2 group cursor-pointer">
+                <div className="flex flex-col text-right">
+                  <span className="font-sans text-[7px] md:text-[8px] italic text-bee-dark/60 leading-none mb-0.5">Collaborate</span>
+                  <span className="font-serif font-bold text-[8px] md:text-[10px] uppercase text-bee-dark leading-none group-hover:text-bee-gold transition-colors">With API</span>
+                </div>
+                <img src="/assets/logo_api.png" alt="API Logo" className="h-8 md:h-10 w-auto group-hover:scale-105 transition-transform duration-300" />
+             </div>
           </div>
 
           {/* Desktop Right Menu */}

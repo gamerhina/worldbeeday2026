@@ -88,7 +88,7 @@ const Hero = () => {
   const isRight = slide.align === "right";
 
   return (
-    <section id="home" className="relative h-screen w-full overflow-hidden flex items-center bg-bee-cream">
+    <section id="home" className="relative h-[75vh] md:h-[80vh] min-h-[600px] w-full overflow-hidden flex items-center bg-bee-cream">
       
       {/* Background Slider */}
       <AnimatePresence initial={false} custom={direction}>
@@ -136,24 +136,24 @@ const Hero = () => {
               <span className="text-bee-teal font-sans font-semibold tracking-wider uppercase text-xs md:text-sm">{slide.tag}</span>
             </div>
 
-            <h1 className="font-serif text-4xl md:text-7xl leading-[1.1] text-bee-dark font-medium tracking-tight mb-8">
+            <h1 className="font-serif text-[32px] md:text-7xl leading-[1.1] text-bee-dark font-medium tracking-tight mb-4 md:mb-8">
               {slide.title} <br />
-              <span className={`italic text-bee-gold ${isCenter ? 'text-5xl md:text-8xl font-bold' : ''}`}>{slide.highlight}</span>
+              <span className={`italic text-bee-gold ${isCenter ? 'text-4xl md:text-8xl font-bold' : ''}`}>{slide.highlight}</span>
             </h1>
 
-            <p className={`font-sans text-base md:text-xl text-bee-dark/80 max-w-2xl leading-relaxed mb-10 ${
+            <p className={`font-sans text-sm md:text-xl text-bee-dark/80 max-w-2xl leading-relaxed mb-6 md:mb-10 ${
               isCenter ? 'mx-auto' : 
-              isRight ? 'border-r-4 border-bee-gold pr-6 ml-auto' : 
-              'border-l-4 border-bee-gold pl-6'
+              isRight ? 'border-r-4 border-bee-gold pr-4 md:pr-6 ml-auto' : 
+              'border-l-4 border-bee-gold pl-4 md:pl-6'
             }`}>
               {slide.subtitle}
             </p>
 
-            <div className={`flex gap-4 ${isCenter ? 'justify-center' : isRight ? 'justify-end' : 'justify-start'}`}>
-              <a href="https://forms.gle/nfJi6cR4LJ28NJGG7" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-bee-dark text-white rounded-full font-bold text-base hover:scale-105 transition-transform duration-300 shadow-lg">
+            <div className={`flex gap-3 md:gap-4 ${isCenter ? 'justify-center' : isRight ? 'justify-end' : 'justify-start'}`}>
+              <a href="https://forms.gle/nfJi6cR4LJ28NJGG7" target="_blank" rel="noopener noreferrer" className="px-6 py-3 md:px-8 md:py-4 bg-bee-dark text-white rounded-full font-bold text-[13px] md:text-base hover:scale-105 transition-transform duration-300 shadow-lg">
                  Register Now
               </a>
-              <a href="#about" className="px-8 py-4 bg-white/50 backdrop-blur border border-bee-dark/10 rounded-full font-bold text-base hover:bg-white transition-colors duration-300">
+              <a href="#about" className="px-6 py-3 md:px-8 md:py-4 bg-white/50 backdrop-blur border border-bee-dark/10 rounded-full font-bold text-[13px] md:text-base hover:bg-white transition-colors duration-300">
                 Learn More
               </a>
             </div>
@@ -162,18 +162,18 @@ const Hero = () => {
       </div>
 
       {/* Navigation Buttons */}
-      <div className="absolute bottom-12 right-12 flex space-x-4 z-20">
+      <div className="absolute bottom-6 md:bottom-12 right-6 md:right-12 flex space-x-2 md:space-x-4 z-20">
         <button 
           onClick={() => paginate(-1)} 
-          className="p-4 rounded-full bg-white/20 backdrop-blur-md border border-white/40 hover:bg-white hover:text-bee-dark transition-all text-bee-dark"
+          className="p-3 md:p-4 rounded-full bg-white/20 backdrop-blur-md border border-white/40 hover:bg-white hover:text-bee-dark transition-all text-bee-dark flex items-center justify-center"
         >
-          <ArrowLeft size={24} />
+          <ArrowLeft className="w-5 h-5 md:w-6 md:h-6" />
         </button>
         <button 
           onClick={() => paginate(1)} 
-          className="p-4 rounded-full bg-bee-dark text-white hover:bg-bee-gold transition-all shadow-lg"
+          className="p-3 md:p-4 rounded-full bg-bee-dark text-white hover:bg-bee-gold transition-all shadow-lg flex items-center justify-center"
         >
-          <ArrowRight size={24} />
+          <ArrowRight className="w-5 h-5 md:w-6 md:h-6" />
         </button>
       </div>
       

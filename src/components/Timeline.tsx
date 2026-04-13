@@ -3,22 +3,22 @@ import { motion } from 'framer-motion';
 
 const Timeline = () => {
   const events = [
-    { date: "April 10 – April 25, 2026", title: "Early Bird Abstract Submission", active: true },
-    { date: "April 15 – April 25, 2026", title: "Early Bird LoA Notification", active: true },
-    { date: "April 26 – May 25, 2026", title: "Late Bird Abstract Submission", active: false },
-    { date: "April 26 – May 25, 2026", title: "Late Bird LoA Notification", active: false },
-    { date: "April 15 – June 2, 2026", title: "Full Paper Submission", active: false },
-    { date: "June 18 – 20, 2026", title: "Seminar Dates", active: false },
-    { date: "June 21, 2026", title: "Fieldtrip", active: false, link: "#fieldtrip-page" },
+    { date: "10 April – 25 April 2026", title: "Pengiriman Abstrak (Early Bird)", active: true },
+    { date: "15 April – 25 April 2026", title: "Pemberitahuan LoA (Early Bird)", active: true },
+    { date: "26 April – 25 Mei 2026", title: "Pengiriman Abstrak (Late Bird)", active: false },
+    { date: "26 April – 25 Mei 2026", title: "Pemberitahuan LoA (Late Bird)", active: false },
+    { date: "15 April – 2 Juni 2026", title: "Pengiriman Makalah Lengkap", active: false },
+    { date: "18 – 20 Juni 2026", title: "Pelaksanaan Seminar", active: false },
+    { date: "21 Juni 2026", title: "Field Trip", active: false, link: "#fieldtrip-page" },
   ];
 
   return (
-    <section id="timeline" className="py-24 bg-gradient-to-b from-bee-cream to-white relative overflow-hidden">
+    <section id="timeline" className="py-12 md:py-24 bg-gradient-to-b from-bee-cream to-white relative overflow-hidden">
       
       <div className="max-w-4xl mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-           <span className="font-sans text-bee-gold font-bold uppercase tracking-widest text-sm mb-2 block">Schedule</span>
-           <h2 className="font-serif text-5xl font-bold text-bee-dark">Important Dates</h2>
+        <div className="text-center mb-10 md:mb-16">
+           <span className="font-sans text-bee-gold font-bold uppercase tracking-widest text-xs md:text-sm mb-1 md:mb-2 block">Jadwal</span>
+           <h2 className="font-serif text-3xl md:text-5xl font-bold text-bee-dark">Tanggal Penting</h2>
         </div>
         
         <div className="relative">
@@ -32,25 +32,26 @@ const Timeline = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`flex items-center justify-between mb-12 w-full ${index % 2 === 0 ? 'flex-row-reverse' : ''}`}
+              className={`flex items-center justify-between mb-4 md:mb-12 w-full ${index % 2 === 0 ? 'flex-row-reverse' : ''}`}
             >
               <div className="w-5/12" />
               
-              <div className="z-10 bg-white p-1 border-4 border-bee-cream rounded-full shadow-sm">
-                <div className={`w-4 h-4 rounded-full ${event.active ? 'bg-bee-gold animate-pulse' : 'bg-bee-teal'}`} />
+              <div className="z-10 bg-white p-0.5 md:p-1 border-2 md:border-4 border-bee-cream rounded-full shadow-sm mx-1 md:mx-0">
+                <div className={`w-3 h-3 md:w-4 md:h-4 rounded-full ${event.active ? 'bg-bee-gold animate-pulse' : 'bg-bee-teal'}`} />
               </div>
               
-              <div className={`w-5/12 ${index % 2 === 0 ? 'text-right' : 'text-left'}`}>
-                <div className="bg-white p-6 rounded-2xl shadow-sm border border-black/5 hover:shadow-md hover:border-bee-gold/50 transition-all cursor-pointer group relative overflow-hidden">
-                  <div className={`absolute top-0 bottom-0 w-1.5 bg-bee-gold ${index % 2 === 0 ? 'right-0' : 'left-0'}`} />
-                  <span className="font-sans text-bee-teal font-bold text-sm tracking-widest uppercase block mb-2">{event.date}</span>
-                  <h3 className="font-serif text-xl font-bold text-bee-dark group-hover:text-bee-gold transition-colors">{event.title}</h3>
+              <div className={`w-[45%] md:w-5/12 ${index % 2 === 0 ? 'text-right' : 'text-left'}`}>
+                <div className="bg-white p-3 md:p-6 rounded-xl md:rounded-2xl shadow-sm border border-black/5 hover:shadow-md hover:border-bee-gold/50 transition-all cursor-pointer group relative overflow-hidden">
+                  <div className={`absolute top-0 bottom-0 w-1 md:w-1.5 bg-bee-gold ${index % 2 === 0 ? 'right-0' : 'left-0'}`} />
+                  <span className="font-sans text-bee-teal font-bold text-[9px] md:text-sm tracking-wide md:tracking-widest uppercase block mb-0.5 md:mb-2 md:leading-normal leading-tight">{event.date}</span>
+                  <h3 className="font-serif text-[12px] md:text-xl font-bold text-bee-dark group-hover:text-bee-gold transition-colors md:leading-normal leading-snug">{event.title}</h3>
                   
                   {event.link && (
-                    <div className={`mt-5 flex ${index % 2 === 0 ? 'justify-end' : 'justify-start'}`}>
-                      <a href={event.link} className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-bee-gold to-yellow-500 text-bee-dark rounded-full font-sans text-sm font-bold shadow-md shadow-bee-gold/30 hover:shadow-lg hover:shadow-bee-gold/50 hover:scale-105 hover:-translate-y-0.5 transition-all duration-300 group/link border border-white/50">
-                        View Fieldtrip Details
-                        <svg className="w-4 h-4 transform group-hover/link:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                    <div className={`mt-2 md:mt-5 flex ${index % 2 === 0 ? 'justify-end' : 'justify-start'}`}>
+                      <a href={event.link} className="inline-flex items-center gap-1 md:gap-2 px-3 md:px-5 py-1.5 md:py-2.5 bg-gradient-to-r from-bee-gold to-yellow-500 text-bee-dark rounded-full font-sans text-[10px] md:text-sm font-bold shadow-md shadow-bee-gold/30 hover:shadow-lg hover:shadow-bee-gold/50 hover:scale-105 hover:-translate-y-0.5 transition-all duration-300 group/link border border-white/50">
+                        <span className="hidden md:inline">View Fieldtrip Details</span>
+                        <span className="inline md:hidden">Details</span>
+                        <svg className="w-3 h-3 md:w-4 md:h-4 transform group-hover/link:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                       </a>
                     </div>
                   )}
