@@ -60,13 +60,18 @@ const Pricing = () => {
           </div>
           
           <div className="p-4 md:p-6 bg-bee-dark flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div className="flex items-center text-xs md:text-sm text-white/70 italic">
-              <Wallet size={16} className="mr-2 text-bee-gold sm:w-[18px] sm:h-[18px]" />
-              Termasuk seminar kit, sertifikat, dan makan siang.
+            <div className="flex flex-col gap-2.5">
+              <div className="flex items-center text-xs md:text-sm text-white/70 italic">
+                <Wallet size={16} className="mr-2 text-bee-gold sm:w-[18px] sm:h-[18px] shrink-0" />
+                Termasuk seminar kit, sertifikat, dan makan siang.
+              </div>
+              <div className="flex items-center text-xs md:text-sm text-white/90 bg-white/5 px-3 py-1.5 rounded-lg border border-white/10 w-fit">
+                Pembayaran ke BNI: <span className="font-bold text-bee-gold mx-1.5 text-sm md:text-base tracking-wide">582601699</span> a.n Ni Kadek Emi Sintha Dewi
+              </div>
             </div>
-            <a href="https://forms.gle/nfJi6cR4LJ28NJGG7" target="_blank" rel="noopener noreferrer" className="px-10 py-3 rounded-xl bg-bee-gold text-bee-dark font-black hover:bg-white transition-all shadow-lg hover:-translate-y-0.5 whitespace-nowrap inline-block">
+            <button onClick={() => window.dispatchEvent(new CustomEvent('openRegistrationModal'))} className="px-10 py-3 rounded-xl bg-bee-gold text-bee-dark font-black hover:bg-white transition-all shadow-lg hover:-translate-y-0.5 whitespace-nowrap inline-block">
               DAFTAR SEKARANG
-            </a>
+            </button>
           </div>
         </div>
       </div>

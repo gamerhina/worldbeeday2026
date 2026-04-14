@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Lenis from 'lenis';
 import Navbar from './components/Navbar';
+import RegistrationModal from './components/RegistrationModal';
+import FieldtripModal from './components/FieldtripModal';
 import Hero from './components/Hero';
 import Speakers from './components/Speakers';
 import Topics from './components/Topics';
@@ -90,6 +92,8 @@ function App() {
       <Pricing />
       <Contact />
       <Footer />
+      <RegistrationModal />
+      <FieldtripModal />
     </div>
   );
 }

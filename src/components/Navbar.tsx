@@ -120,9 +120,9 @@ const Navbar = () => {
                   {link.name}
                 </a>
               ))}
-               <a href="https://forms.gle/nfJi6cR4LJ28NJGG7" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className="text-xl font-bold text-bee-gold mt-4">
+               <button onClick={() => { setIsOpen(false); window.dispatchEvent(new CustomEvent('openRegistrationModal')); }} className="text-xl font-bold text-bee-gold mt-4">
                 Register Now
-              </a>
+              </button>
             </div>
           </motion.div>
         )}

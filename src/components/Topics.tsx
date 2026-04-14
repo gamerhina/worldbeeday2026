@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Bug, Sprout, Users, Cpu, Leaf } from 'lucide-react';
+import { Bug, Sprout, Users, Cpu, Leaf, Layers, Heart } from 'lucide-react';
 
 const topics = [
   { icon: Sprout, title: "Budidaya Tanaman", desc: "Praktik agronomi modern untuk meningkatkan produktivitas dan kualitas hasil panen secara berkelanjutan.", color: "text-emerald-600", bg: "bg-emerald-50", border: "border-emerald-500" },
@@ -8,6 +8,8 @@ const topics = [
   { icon: Cpu, title: "Teknologi Informasi Pertanian", desc: "Penerapan teknologi cerdas, digitalisasi, dan presisi untuk masa depan pertanian.", color: "text-indigo-600", bg: "bg-indigo-50", border: "border-indigo-500" },
   { icon: Bug, title: "Hama & Penyakit Tanaman", desc: "Strategi pengelolaan hama dan penyakit terpadu untuk melindungi hasil pertanian.", color: "text-rose-600", bg: "bg-rose-50", border: "border-rose-500" },
   { icon: Leaf, title: "Konservasi, Keanekaragaman Hayati & Ekosistem", desc: "Menjaga keseimbangan ekologis dan keanekaragaman hayati untuk mendukung keberlanjutan lingkungan.", color: "text-amber-600", bg: "bg-amber-50", border: "border-amber-500" },
+  { icon: Layers, title: "Ilmu Tanah", desc: "Mempelajari sifat fisik, kimia, dan biologi tanah guna mendukung produktivitas dan kelestarian pertanian.", color: "text-orange-600", bg: "bg-orange-50", border: "border-orange-500" },
+  { icon: Heart, title: "Lebah dan Kesehatan", desc: "Eksplorasi manfaat madu, propolis, dan produk lebah lainnya untuk meningkatkan kesehatan manusia.", color: "text-pink-600", bg: "bg-pink-50", border: "border-pink-500" },
 ];
 
 const Topics = () => {

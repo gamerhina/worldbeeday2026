@@ -48,11 +48,11 @@ const Timeline = () => {
                   
                   {event.link && (
                     <div className={`mt-2 md:mt-5 flex ${index % 2 === 0 ? 'justify-end' : 'justify-start'}`}>
-                      <a href={event.link} className="inline-flex items-center gap-1 md:gap-2 px-3 md:px-5 py-1.5 md:py-2.5 bg-gradient-to-r from-bee-gold to-yellow-500 text-bee-dark rounded-full font-sans text-[10px] md:text-sm font-bold shadow-md shadow-bee-gold/30 hover:shadow-lg hover:shadow-bee-gold/50 hover:scale-105 hover:-translate-y-0.5 transition-all duration-300 group/link border border-white/50">
+                      <button onClick={() => window.dispatchEvent(new CustomEvent('openFieldtripModal'))} className="inline-flex items-center gap-1 md:gap-2 px-3 md:px-5 py-1.5 md:py-2.5 bg-gradient-to-r from-bee-gold to-yellow-500 text-bee-dark rounded-full font-sans text-[10px] md:text-sm font-bold shadow-md shadow-bee-gold/30 hover:shadow-lg hover:shadow-bee-gold/50 hover:scale-105 hover:-translate-y-0.5 transition-all duration-300 group/link border border-white/50">
                         <span className="hidden md:inline">View Fieldtrip Details</span>
                         <span className="inline md:hidden">Details</span>
                         <svg className="w-3 h-3 md:w-4 md:h-4 transform group-hover/link:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-                      </a>
+                      </button>
                     </div>
                   )}
                 </div>
