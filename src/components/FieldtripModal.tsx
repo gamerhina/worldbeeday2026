@@ -140,6 +140,22 @@ const FieldtripModal = () => {
                 </div>
 
               </div>
+
+              {/* Catatan Penting */}
+              <div className="mt-8 bg-amber-50 border border-amber-200/60 p-5 md:p-6 rounded-2xl relative overflow-hidden shadow-sm">
+                <div className="absolute -top-10 -right-10 w-32 h-32 bg-amber-200/30 rounded-full blur-2xl"></div>
+                <h3 className="font-bold text-amber-900 text-base md:text-lg mb-4 flex items-center gap-2 relative z-10">
+                  <span className="flex-shrink-0 w-1.5 h-5 bg-amber-500 rounded-full"></span>
+                  Catatan Tambahan
+                </h3>
+                <ul className="list-disc pl-5 space-y-2 text-sm text-amber-900/80 relative z-10">
+                  <li><span className="font-semibold text-amber-900">Biaya di luar biaya seminar;</span></li>
+                  <li>Panitia hanya mengkoordinir;</li>
+                  <li>Field trip akan dilakukan ketika jumlah peserta <span className="font-semibold text-amber-900">minimal 30 peserta</span>;</li>
+                  <li>Kalau peserta yang mendaftar field trip kurang dari jumlah minimal, field trip <span className="font-semibold text-red-600">tidak akan dilakukan</span>;</li>
+                  <li>Pembayaran bisa dilakukan pada saat registrasi, dan <span className="font-semibold text-amber-900">maksimal 1 hari sebelum field trip</span>.</li>
+                </ul>
+              </div>
             </div>
             
           </motion.div>
