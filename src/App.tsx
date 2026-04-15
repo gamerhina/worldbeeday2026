@@ -79,7 +79,7 @@ function App() {
           <span className="font-sans text-bee-teal font-bold uppercase tracking-widest text-xs md:text-sm mb-1 md:mb-2 block">Ringkasan</span>
           <h2 className="font-serif text-3xl md:text-5xl font-bold text-bee-dark mb-4 md:mb-8">Tentang Seminar</h2>
           <p className="font-sans text-sm md:text-xl text-bee-dark/70 leading-relaxed text-justify md:text-center mt-2">
-            Kelapa sawit memainkan peran penting dalam ekonomi Indonesia, namun produktivitasnya terhambat oleh menurunnya populasi kumbang penyerbuk. Seminar ini diselenggarakan oleh Universitas Lampung, Perhimpunan Entomologi Indonesia (PEI) berkolaborasi dengan Asosiasi Perlebahan Indonesia (API) dan sponsor tunggal PT. Tunas Baru Lampung, Tbk. Lebah madu dan lebah tanpa sengat berpotensi menjadi penyerbuk alternatif sekaligus menawarkan sumber ekonomi baru. Seminar "Lebah untuk Sawit Berkelanjutan" mendorong kolaborasi lintas sektor untuk memperkuat peran lebah dalam penyerbukan, konservasi, dan keberlanjutan kelapa sawit di masa depan.
+            Kelapa sawit memainkan peran penting dalam ekonomi Indonesia, namun produktivitasnya terhambat oleh menurunnya populasi kumbang penyerbuk. Seminar ini diselenggarakan oleh Universitas Lampung, Perhimpunan Entomologi Indonesia (PEI) berkolaborasi dengan Asosiasi Perlebahan Indonesia (API) dan sponsor tunggal PT Tunas Baru Lampung Tbk Lebah madu dan lebah tanpa sengat berpotensi menjadi penyerbuk alternatif sekaligus menawarkan sumber ekonomi baru. Seminar "Lebah untuk Sawit Berkelanjutan" mendorong kolaborasi lintas sektor untuk memperkuat peran lebah dalam penyerbukan, konservasi, dan keberlanjutan kelapa sawit di masa depan.
           </p>
         </div>
         

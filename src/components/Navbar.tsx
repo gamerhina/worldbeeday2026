@@ -34,7 +34,7 @@ const Navbar = () => {
            {[...Array(8)].map((_, i) => (
              <div key={i} className="flex items-center mx-6 md:mx-10 uppercase">
                <span className="text-[#DA291C]">Sponsor tunggal kegiatan :</span> 
-               <span className="ml-1 md:ml-2">PT. Tunas Baru Lampung, Tbk.</span>
+               <span className="ml-1 md:ml-2">PT Tunas Baru Lampung Tbk</span>
                <img src="/assets/sponsor_tbl.png" alt="PT Tunas Baru Lampung" className="h-4 md:h-6 ml-3 md:ml-5 object-contain" />
                <span className="ml-12 md:ml-20 opacity-30 text-bee-dark">•</span>
              </div>

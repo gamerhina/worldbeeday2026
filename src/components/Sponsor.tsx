@@ -22,7 +22,7 @@ const Sponsor = () => {
             />
           </div>
           
-          <h3 className="font-serif text-2xl md:text-4xl font-bold text-bee-dark mb-2">PT. Tunas Baru Lampung, Tbk.</h3>
+          <h3 className="font-serif text-2xl md:text-4xl font-bold text-bee-dark mb-2">PT Tunas Baru Lampung Tbk</h3>
         </motion.div>
       </div>
     </section>
