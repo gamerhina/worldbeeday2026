@@ -46,7 +46,7 @@ const RegistrationModal = () => {
                   <li>Mengisi data peserta pada google form dengan link sebagai berikut: <a href="https://forms.gle/nfJi6cR4LJ28NJGG7" target="_blank" rel="noopener noreferrer" className="text-bee-teal hover:text-teal-700 font-semibold underline whitespace-nowrap">Link Pendaftaran</a></li>
                   <li>Pembayaran dilakukan ke rekening <span className="font-bold text-bee-dark">BNI : 582601699</span> a.n Ni Kadek Emi Sintha Dewi</li>
                   <li>Submit google form</li>
-                  <li>Konfirmasi Bukti pembayaran via Whatsapp kepada panitia <a href="https://wa.me/6285379858585" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-semibold whitespace-nowrap">(Puji Lestari: +6285379858585)</a></li>
+                  <li>Konfirmasi Bukti pembayaran via Whatsapp kepada panitia <a href="https://wa.me/6281339534591" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-semibold whitespace-nowrap">(Ni Kadek Emi Sintha Dewi: +6281339534591)</a></li>
                   <li>Peserta menunggu LoA sesuai jadwal yang ditentukan</li>
                   <li>Mengirimkan makalah lengkap <a href="#" className="text-bee-teal hover:text-teal-700 font-semibold underline whitespace-nowrap">(unduh template makalah lengkap)</a> ke email panitia: <a href="mailto:panitia.wbd2026@gmail.com" className="text-blue-600 hover:text-blue-800 font-semibold">panitia.wbd2026@gmail.com</a> dengan subjek: <span className="font-mono bg-gray-100 px-2 py-0.5 rounded text-sm text-bee-dark whitespace-nowrap overflow-x-auto block mt-1 w-max">Makalah_Nama Lengkap_Nomor topik</span></li>
                 </ol>
@@ -66,13 +66,21 @@ const RegistrationModal = () => {
               </div>
             </div>
 
-            <div className="p-6 border-t border-gray-100 flex justify-end bg-gray-50/50 focus:outline-none">
+            <div className="p-6 border-t border-gray-100 flex justify-end items-center gap-3 bg-gray-50/50 focus:outline-none">
               <button 
                 onClick={() => setIsOpen(false)}
-                className="px-6 py-2.5 bg-bee-dark text-white rounded-lg font-bold hover:bg-bee-gold hover:text-bee-dark transition-all focus:ring-2 focus:ring-bee-gold focus:outline-none"
+                className="px-6 py-2.5 bg-gray-200 text-gray-700 rounded-lg font-bold hover:bg-gray-300 hover:text-gray-900 transition-all focus:outline-none"
               >
                 Tutup
               </button>
+              <a 
+                href="https://forms.gle/nfJi6cR4LJ28NJGG7" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="px-6 py-2.5 bg-bee-dark text-white rounded-lg font-bold hover:bg-bee-gold hover:text-bee-dark transition-all focus:ring-2 focus:ring-bee-gold focus:outline-none inline-block text-center"
+              >
+                Link Registrasi
+              </a>
             </div>
           </motion.div>
         </div>

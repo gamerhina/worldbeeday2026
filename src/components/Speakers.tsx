@@ -18,7 +18,7 @@ const speakers = [
     name: "Hari Purwanto, Ph.D.",
     role: "Keynote Speaker",
     image: "/assets/speaker_hari_purwanto.png",
-    topic: <>Potensi Integrasi lebah dan <span className="italic">Elaidobius</span> sp. untuk keberlanjutan dan produktivitas kelapa sawit</>
+    topic: <>Potensi Integrasi lebah dan <span className="italic">Elaeidobius</span> sp. untuk keberlanjutan dan produktivitas kelapa sawit</>
   },
   {
     name: "Prof. Hamim Sudarsono",
