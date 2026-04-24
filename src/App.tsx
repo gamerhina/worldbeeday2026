@@ -78,11 +78,8 @@ function App() {
   useEffect(() => {
     if (!lenis) return;
 
-    if (location.pathname === '/') {
-      lenis.start();
-    } else {
-      lenis.stop();
-    }
+    // Ensure lenis is always running so pages remain scrollable
+    lenis.start();
 
     const handleAnchorClick = (e: MouseEvent) => {
       if (location.pathname !== '/') return;
