@@ -9,7 +9,7 @@ const FieldtripPage = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-bee-cream font-sans pb-12 overflow-hidden">
+    <div className="min-h-screen bg-bee-cream font-sans pb-12 overflow-x-hidden">
       {/* Navbar area background */}
       <div className="h-20 bg-white shadow-sm flex items-center px-4 md:px-12 sticky top-0 z-[60]">
         <Link to="/" className="flex items-center gap-2 text-bee-dark hover:text-bee-teal transition-colors font-bold group">
