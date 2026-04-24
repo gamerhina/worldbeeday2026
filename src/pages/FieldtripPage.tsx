@@ -212,7 +212,7 @@ const FieldtripPage = () => {
             </h3>
             <ul className="list-disc pl-6 space-y-3 text-base md:text-lg text-amber-900/90 relative z-10 font-medium leading-relaxed">
               <li><span className="font-bold text-amber-900">Biaya di luar biaya seminar;</span></li>
-              <li>Panitia hanya mengkoordinir;</li>
+              <li>Panitia berperan sebagai fasilitator, sementara pelaksanaan acara ditangani oleh event organizer (EO).;</li>
               <li>Field trip akan dilakukan ketika jumlah peserta mencapai <span className="font-bold text-amber-900 bg-amber-200/50 px-1 rounded">minimal 76 peserta</span>;</li>
               <li>Kalau peserta yang mendaftar field trip kurang dari jumlah minimal, field trip <span className="font-bold text-red-600 bg-red-100 px-1 rounded">tidak akan di langsungkan</span>;</li>
               <li>Pembayaran bisa dilakukan pada saat registrasi, dan <span className="font-bold text-amber-900 underline decoration-amber-300 underline-offset-4">maksimal 10 hari sebelum field trip</span>.</li>
