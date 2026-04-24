@@ -223,7 +223,7 @@ const FieldtripPage = () => {
                  <ArrowLeft size={24} /> Kembali
                </Link>
                <a href="https://forms.gle/nfJi6cR4LJ28NJGG7" target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-gradient-to-r from-bee-gold to-yellow-500 hover:from-amber-500 hover:to-orange-400 text-bee-dark font-black text-xl rounded-full shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 inline-flex items-center justify-center gap-3 w-full sm:w-auto">
-                 Daftar Field Trip Sekarang <ArrowLeft size={24} className="rotate-180" />
+                 Daftar Sekarang <ArrowLeft size={24} className="rotate-180" />
                </a>
             </div>
           </div>
