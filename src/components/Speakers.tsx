@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 
 const speakers = [
   {
-    name: "Dwi Asmono, Ph.D.",
+    name: "Dr. Ruli Wandri",
     role: "Keynote Speaker",
-    image: "/assets/speaker_dwi_asmono.png",
+    image: "/assets/speaker_ruli_wandri.png",
     topic: "Polinator dan produktivitas kelapa sawit"
   },
   {
