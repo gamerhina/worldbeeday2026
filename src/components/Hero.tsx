@@ -10,7 +10,7 @@ const wrap = (min: number, max: number, v: number) => {
 const slides = [
   {
     image: "/assets/header1.png",
-    tag: "Bandar Lampung, 23 - 25 Juni 2026",
+    tag: "Bandar Lampung, 18 - 20 Juni 2026",
     title: "Seminar Nasional",
     highlight: "World Bee Day 2026",
     subtitle: "Lebah untuk Sawit Berkelanjutan: Konservasi, Keanekaragaman Hayati, dan Peningkatan Produktivitas",
